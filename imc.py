@@ -1,0 +1,13 @@
+peso = int(input("Digite o seu peso (em kilos): "))
+altura = float(input("Digite a sua altura (em metros ex:1.56): "))
+gender = input("Digite o seu gênero (m ou f): ")
+imc = peso / (altura ** 2)
+if (imc >= 36) and (gender == "m") : print ("O seu IMC é:",imc,", considerado Obeso.")
+elif (imc > 32) and (gender == "m") and (imc < 36) : print ("O seu IMC é:",imc,", considerado Sobrepeso.")
+elif (imc > 26) and (gender == "m") and (imc < 32) : print ("O seu IMC é:",imc,", considerado Normal.")
+elif (imc < 20.7) and (gender == "m") : print ("O seu IMC é:",imc," considerado Abaixo da média.")
+if (imc >= 34) and (gender == "f") : print ("O seu IMC é:",imc,", considerado Obeso.")
+elif (imc > 30) and (gender == "f") and (imc < 34) : print ("O seu IMC é:",imc,", considerado Sobrepeso.")
+elif (imc > 24) and (gender == "f") and (imc < 30) : print ("O seu IMC é:",imc,", considerado Normal.")
+elif (imc < 19.1) and (gender == "f") : print ("O seu IMC é:",imc," considerado Abaixo da média.")
+
